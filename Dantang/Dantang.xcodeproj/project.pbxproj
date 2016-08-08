@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE58A71D58827700D6703C /* AppDelegate.swift */; };
 		D9BE58AF1D58827700D6703C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BE58AE1D58827700D6703C /* Assets.xcassets */; };
-		D9BE58B21D58827700D6703C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BE58B01D58827700D6703C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9BE58A41D58827700D6703C /* Dantang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dantang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BE58A71D58827700D6703C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BE58AE1D58827700D6703C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9BE58B11D58827700D6703C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9BE58B31D58827700D6703C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +57,6 @@
 				D9BE58CC1D58837B00D6703C /* Product */,
 				D9BE58A71D58827700D6703C /* AppDelegate.swift */,
 				D9BE58AE1D58827700D6703C /* Assets.xcassets */,
-				D9BE58B01D58827700D6703C /* LaunchScreen.storyboard */,
 				D9BE58B31D58827700D6703C /* Info.plist */,
 			);
 			path = Dantang;
@@ -301,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9BE58B21D58827700D6703C /* LaunchScreen.storyboard in Resources */,
 				D9BE58AF1D58827700D6703C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,17 +314,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D9BE58B01D58827700D6703C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9BE58B11D58827700D6703C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D9BE58B41D58827700D6703C /* Debug */ = {
@@ -457,6 +442,7 @@
 				D9BE58B81D58827700D6703C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
