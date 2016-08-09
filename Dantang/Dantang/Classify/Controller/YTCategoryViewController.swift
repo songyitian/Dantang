@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YTCategoryViewController: UIViewController {
+class YTCategoryViewController: YTMainViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

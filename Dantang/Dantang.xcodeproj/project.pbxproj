@@ -21,6 +21,13 @@
 		D91119841D5980CC00ABBFCE /* YTTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119831D5980CC00ABBFCE /* YTTabBarControllerViewController.swift */; };
 		D91119861D5980E100ABBFCE /* YTNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119851D5980E100ABBFCE /* YTNavViewController.swift */; };
 		D91119881D59817000ABBFCE /* YTNewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119871D59817000ABBFCE /* YTNewfeatureViewController.swift */; };
+		D911198A1D59C4F600ABBFCE /* YTNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119891D59C4F600ABBFCE /* YTNetworkTool.swift */; };
+		D911198C1D59C6EB00ABBFCE /* YTChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911198B1D59C6EB00ABBFCE /* YTChannel.swift */; };
+		D911198E1D59C6FB00ABBFCE /* YTHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911198D1D59C6FB00ABBFCE /* YTHomeItem.swift */; };
+		D91119901D59C71200ABBFCE /* YTSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911198F1D59C71200ABBFCE /* YTSearchResult.swift */; };
+		D91119921D59D67200ABBFCE /* YTTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119911D59D67200ABBFCE /* YTTopicTableViewController.swift */; };
+		D91119941D59D8E900ABBFCE /* YTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119931D59D8E900ABBFCE /* YTSearchViewController.swift */; };
+		D911199A1D59DAD900ABBFCE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119991D59DAD900ABBFCE /* UIView+Extension.swift */; };
 		D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE58A71D58827700D6703C /* AppDelegate.swift */; };
 		D9BE58AF1D58827700D6703C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BE58AE1D58827700D6703C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -41,6 +48,13 @@
 		D91119831D5980CC00ABBFCE /* YTTabBarControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		D91119851D5980E100ABBFCE /* YTNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNavViewController.swift; sourceTree = "<group>"; };
 		D91119871D59817000ABBFCE /* YTNewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNewfeatureViewController.swift; sourceTree = "<group>"; };
+		D91119891D59C4F600ABBFCE /* YTNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNetworkTool.swift; sourceTree = "<group>"; };
+		D911198B1D59C6EB00ABBFCE /* YTChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTChannel.swift; sourceTree = "<group>"; };
+		D911198D1D59C6FB00ABBFCE /* YTHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTHomeItem.swift; sourceTree = "<group>"; };
+		D911198F1D59C71200ABBFCE /* YTSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSearchResult.swift; sourceTree = "<group>"; };
+		D91119911D59D67200ABBFCE /* YTTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTTopicTableViewController.swift; sourceTree = "<group>"; };
+		D91119931D59D8E900ABBFCE /* YTSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSearchViewController.swift; sourceTree = "<group>"; };
+		D91119991D59DAD900ABBFCE /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D9BE58A41D58827700D6703C /* Dantang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dantang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BE58A71D58827700D6703C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BE58AE1D58827700D6703C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				D911196D1D59769A00ABBFCE /* YTDantangViewController.swift */,
+				D91119911D59D67200ABBFCE /* YTTopicTableViewController.swift */,
+				D91119931D59D8E900ABBFCE /* YTSearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +181,9 @@
 		D9BE58BF1D58837B00D6703C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D911198B1D59C6EB00ABBFCE /* YTChannel.swift */,
+				D911198D1D59C6FB00ABBFCE /* YTHomeItem.swift */,
+				D911198F1D59C71200ABBFCE /* YTSearchResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +228,7 @@
 		D9BE58C41D58837B00D6703C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D91119991D59DAD900ABBFCE /* UIView+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -227,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				D91119811D597F0900ABBFCE /* YTConst.swift */,
+				D91119891D59C4F600ABBFCE /* YTNetworkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -427,16 +448,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91119841D5980CC00ABBFCE /* YTTabBarControllerViewController.swift in Sources */,
+				D91119901D59C71200ABBFCE /* YTSearchResult.swift in Sources */,
 				D911197C1D5976D900ABBFCE /* YTMainViewController.swift in Sources */,
 				D91119881D59817000ABBFCE /* YTNewfeatureViewController.swift in Sources */,
 				D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */,
 				D911197A1D5976D000ABBFCE /* YTMeViewController.swift in Sources */,
+				D911198E1D59C6FB00ABBFCE /* YTHomeItem.swift in Sources */,
 				D91119711D5976AA00ABBFCE /* YTLoginViewController.swift in Sources */,
 				D91119821D597F0900ABBFCE /* YTConst.swift in Sources */,
+				D91119941D59D8E900ABBFCE /* YTSearchViewController.swift in Sources */,
+				D911198A1D59C4F600ABBFCE /* YTNetworkTool.swift in Sources */,
 				D91119801D5976F100ABBFCE /* YTCategoryViewController.swift in Sources */,
+				D911199A1D59DAD900ABBFCE /* UIView+Extension.swift in Sources */,
 				D911197E1D5976E400ABBFCE /* YTProductViewController.swift in Sources */,
+				D911198C1D59C6EB00ABBFCE /* YTChannel.swift in Sources */,
 				D91119861D5980E100ABBFCE /* YTNavViewController.swift in Sources */,
 				D91119751D5976B900ABBFCE /* YTRegisterViewController.swift in Sources */,
+				D91119921D59D67200ABBFCE /* YTTopicTableViewController.swift in Sources */,
 				D911196E1D59769A00ABBFCE /* YTDantangViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,11 +560,14 @@
 			baseConfigurationReference = 912ADA55476904F67852A147 /* Pods-Dantang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dantang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tarena.Dantang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dantang/Main/Category/Dantang-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -545,11 +576,13 @@
 			baseConfigurationReference = 867DA3664251DC97A1CFC12F /* Pods-Dantang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dantang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tarena.Dantang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dantang/Main/Category/Dantang-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -1,5 +1,5 @@
 //
-//  YTProductViewController.swift
+//  YTSearchViewController.swift
 //  Dantang
 //
 //  Created by soft01 on 16/8/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YTProductViewController: YTMainViewController {
+class YTSearchViewController: YTMainViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

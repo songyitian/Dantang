@@ -8,28 +8,76 @@
 
 import UIKit
 
-class YTDantangViewController: UIViewController {
+class YTDantangViewController: YTMainViewController {
 
+    var channels = [YTChannel]()
+    //biaoqian
+    weak var titleView = UIView()
+    
+    //底部红色指示器
+    
+    weak var indicatorView = UIView()
+    
+    weak var contentView = UIScrollView()
+    //选中当前按钮
+    weak var selectedButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //设置导航栏
+        setupNav()
+        //获取首页顶部数据
+        YTNetworkTool.shareNetworkTool.loadHomeTopData {[weak self] (ym_channels) in
+            for channel in ym_channels {
+                let vc = YTTopicTableViewController()
+                vc.title = channel.name
+                vc.type = channel.id!
+                self?.addChildViewController(vc)
+                
+            }
+        }
+        
+        //设置顶部标签栏
+        self.setupTitlesView()
+//        底部的scrollView
+        self.setupContentView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupTitlesView() -> Void {
+        
+    }
+    
+    
+    func setupContentView() -> Void {
+        automaticallyAdjustsScrollViewInsets = false
+        
+        let contentView = UIScrollView()
+        contentView.frame = view.bounds
+        contentView.delegate = self
+        contentView.contentSize = CGSizeMake(contentView.width * (CGFloat(childViewControllers.count)), 0)
+        
+    }
+    //初始化zi控制器
+    func setupChildViewControllers() {
+        for channel in channels {
+            let vc = YTTopicTableViewController()
+            vc.title = channel.name
+            addChildViewController(vc)
+        }
+    }
+    func setupNav() -> Void {
+        view.backgroundColor = UIColor.whiteColor()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .Plain, target: self, action: #selector(dantangRightBBClick))
+    }
+    func dantangRightBBClick() -> Void {
+        let searchBarViewController = YTSearchViewController()
+        navigationController?.pushViewController(searchBarViewController, animated: true)
+        
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension YTDantangViewController: UIScrollViewDelegate {
+    
 }

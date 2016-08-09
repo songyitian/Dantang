@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YTMeViewController: UIViewController {
+class YTMeViewController: YTMainViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

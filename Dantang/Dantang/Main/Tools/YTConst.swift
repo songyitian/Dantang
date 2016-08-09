@@ -7,7 +7,7 @@
 //
 
 import UIKit
-enum YMTopicType: Int {
+enum YTTopicType: Int {
     /// 精选
     case Selection = 4
     /// 美食
@@ -22,7 +22,7 @@ enum YMTopicType: Int {
     case Grocery = 22
 }
 
-enum YMShareButtonType: Int {
+enum YTShareButtonType: Int {
     /// 微信朋友圈
     case WeChatTimeline = 0
     /// 微信好友
@@ -37,7 +37,7 @@ enum YMShareButtonType: Int {
     case CopyLink = 5
 }
 
-enum YMOtherLoginButtonType: Int {
+enum YTOtherLoginButtonType: Int {
     /// 微博
     case weiboLogin = 100
     /// 微信
@@ -87,18 +87,18 @@ let kTopViewH: CGFloat = 230
 
 
 /// RGBA的颜色设置
-func YMColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+func YTColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
     return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
 }
 
 /// 背景灰色
-func YMGlobalColor() -> UIColor {
-    return YMColor(240, g: 240, b: 240, a: 1)
+func YTGlobalColor() -> UIColor {
+    return YTColor(240, g: 240, b: 240, a: 1)
 }
 
 /// 红色
-func YMGlobalRedColor() -> UIColor {
-    return YMColor(245, g: 80, b: 83, a: 1.0)
+func YTGlobalRedColor() -> UIColor {
+    return YTColor(245, g: 80, b: 83, a: 1.0)
 }
 
 /// iPhone 5
