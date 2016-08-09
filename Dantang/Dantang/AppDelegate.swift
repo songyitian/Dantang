@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame:UIScreen.mainScreen().bounds)
+        window?.makeKeyAndVisible()
+        //检测用户是不是第一次启动
+        if !NSUserDefaults.standardUserDefaults().boolForKey(YTFirstLaunch) {
+            window?.rootViewController = YTNewfeatureViewController()
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: YTFirstLaunch)
+        }else{
+            window?.rootViewController = YTTabBarControllerViewController()
+        }
         return true
     }
 

@@ -13,11 +13,14 @@
 		D91119721D5976AA00ABBFCE /* YTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91119701D5976AA00ABBFCE /* YTLoginViewController.xib */; };
 		D91119751D5976B900ABBFCE /* YTRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119731D5976B900ABBFCE /* YTRegisterViewController.swift */; };
 		D91119761D5976B900ABBFCE /* YTRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91119741D5976B900ABBFCE /* YTRegisterViewController.xib */; };
-		D91119781D5976C800ABBFCE /* YTNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119771D5976C800ABBFCE /* YTNewFeatureViewController.swift */; };
 		D911197A1D5976D000ABBFCE /* YTMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119791D5976D000ABBFCE /* YTMeViewController.swift */; };
 		D911197C1D5976D900ABBFCE /* YTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911197B1D5976D900ABBFCE /* YTMainViewController.swift */; };
 		D911197E1D5976E400ABBFCE /* YTProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911197D1D5976E400ABBFCE /* YTProductViewController.swift */; };
 		D91119801D5976F100ABBFCE /* YTCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911197F1D5976F100ABBFCE /* YTCategoryViewController.swift */; };
+		D91119821D597F0900ABBFCE /* YTConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119811D597F0900ABBFCE /* YTConst.swift */; };
+		D91119841D5980CC00ABBFCE /* YTTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119831D5980CC00ABBFCE /* YTTabBarControllerViewController.swift */; };
+		D91119861D5980E100ABBFCE /* YTNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119851D5980E100ABBFCE /* YTNavViewController.swift */; };
+		D91119881D59817000ABBFCE /* YTNewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119871D59817000ABBFCE /* YTNewfeatureViewController.swift */; };
 		D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE58A71D58827700D6703C /* AppDelegate.swift */; };
 		D9BE58AF1D58827700D6703C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BE58AE1D58827700D6703C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -30,11 +33,14 @@
 		D91119701D5976AA00ABBFCE /* YTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginViewController.xib; sourceTree = "<group>"; };
 		D91119731D5976B900ABBFCE /* YTRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTRegisterViewController.swift; sourceTree = "<group>"; };
 		D91119741D5976B900ABBFCE /* YTRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTRegisterViewController.xib; sourceTree = "<group>"; };
-		D91119771D5976C800ABBFCE /* YTNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNewFeatureViewController.swift; sourceTree = "<group>"; };
 		D91119791D5976D000ABBFCE /* YTMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTMeViewController.swift; sourceTree = "<group>"; };
 		D911197B1D5976D900ABBFCE /* YTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTMainViewController.swift; sourceTree = "<group>"; };
 		D911197D1D5976E400ABBFCE /* YTProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTProductViewController.swift; sourceTree = "<group>"; };
 		D911197F1D5976F100ABBFCE /* YTCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTCategoryViewController.swift; sourceTree = "<group>"; };
+		D91119811D597F0900ABBFCE /* YTConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTConst.swift; sourceTree = "<group>"; };
+		D91119831D5980CC00ABBFCE /* YTTabBarControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		D91119851D5980E100ABBFCE /* YTNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNavViewController.swift; sourceTree = "<group>"; };
+		D91119871D59817000ABBFCE /* YTNewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNewfeatureViewController.swift; sourceTree = "<group>"; };
 		D9BE58A41D58827700D6703C /* Dantang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dantang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BE58A71D58827700D6703C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BE58AE1D58827700D6703C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,7 +191,7 @@
 				D91119701D5976AA00ABBFCE /* YTLoginViewController.xib */,
 				D91119731D5976B900ABBFCE /* YTRegisterViewController.swift */,
 				D91119741D5976B900ABBFCE /* YTRegisterViewController.xib */,
-				D91119771D5976C800ABBFCE /* YTNewFeatureViewController.swift */,
+				D91119871D59817000ABBFCE /* YTNewfeatureViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				D911197B1D5976D900ABBFCE /* YTMainViewController.swift */,
+				D91119831D5980CC00ABBFCE /* YTTabBarControllerViewController.swift */,
+				D91119851D5980E100ABBFCE /* YTNavViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 		D9BE58C61D58837B00D6703C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D91119811D597F0900ABBFCE /* YTConst.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -417,13 +426,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91119841D5980CC00ABBFCE /* YTTabBarControllerViewController.swift in Sources */,
 				D911197C1D5976D900ABBFCE /* YTMainViewController.swift in Sources */,
+				D91119881D59817000ABBFCE /* YTNewfeatureViewController.swift in Sources */,
 				D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */,
 				D911197A1D5976D000ABBFCE /* YTMeViewController.swift in Sources */,
 				D91119711D5976AA00ABBFCE /* YTLoginViewController.swift in Sources */,
+				D91119821D597F0900ABBFCE /* YTConst.swift in Sources */,
 				D91119801D5976F100ABBFCE /* YTCategoryViewController.swift in Sources */,
-				D91119781D5976C800ABBFCE /* YTNewFeatureViewController.swift in Sources */,
 				D911197E1D5976E400ABBFCE /* YTProductViewController.swift in Sources */,
+				D91119861D5980E100ABBFCE /* YTNavViewController.swift in Sources */,
 				D91119751D5976B900ABBFCE /* YTRegisterViewController.swift in Sources */,
 				D911196E1D59769A00ABBFCE /* YTDantangViewController.swift in Sources */,
 			);
