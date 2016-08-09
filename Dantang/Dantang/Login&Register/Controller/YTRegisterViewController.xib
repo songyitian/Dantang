@@ -14,7 +14,56 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确保您的手机畅通，接收验证码短信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJk-Oa-sXg">
+                    <rect key="frame" x="8" y="74" width="281" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="281" id="ZZZ-Dc-a22"/>
+                        <constraint firstAttribute="height" constant="21" id="mlw-EV-kwq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fC6-sO-nD3">
+                    <rect key="frame" x="0.0" y="103" width="600" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dl1-zi-fEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8g-gq-erV">
+                    <rect key="frame" x="15" y="187" width="570" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9zr-Ev-6pi"/>
+                        <constraint firstAttribute="width" constant="300" id="pa6-t0-odD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="获取短信验证码">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pa6-t0-odD"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fC6-sO-nD3" secondAttribute="trailing" id="1kc-nz-ulP"/>
+                <constraint firstItem="c8g-gq-erV" firstAttribute="top" secondItem="fC6-sO-nD3" secondAttribute="bottom" constant="40" id="B7e-LC-58Q"/>
+                <constraint firstItem="DJk-Oa-sXg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="PZR-Ar-Pxs"/>
+                <constraint firstItem="c8g-gq-erV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rvj-dU-nmR"/>
+                <constraint firstItem="fC6-sO-nD3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="krt-d0-Ln8"/>
+                <constraint firstAttribute="trailing" secondItem="c8g-gq-erV" secondAttribute="trailing" constant="15" id="lYt-ie-69l"/>
+                <constraint firstItem="fC6-sO-nD3" firstAttribute="top" secondItem="DJk-Oa-sXg" secondAttribute="bottom" constant="8" id="qrD-Cs-mUt"/>
+                <constraint firstItem="DJk-Oa-sXg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="uP0-PE-Rxq"/>
+                <constraint firstItem="c8g-gq-erV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wfm-Cf-b9c"/>
+            </constraints>
         </view>
     </objects>
 </document>

@@ -131,6 +131,7 @@ class YTNewfeatureViewController: UICollectionViewController {
             scrollDirection = .Horizontal
             
             collectionView?.showsVerticalScrollIndicator = false
+            collectionView?.showsHorizontalScrollIndicator = false
             collectionView?.bounces = false
             collectionView?.pagingEnabled = true
         }
