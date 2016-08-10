@@ -2,10 +2,11 @@
 //  UIView+Extension.swift
 //  Dantang
 //
-//  Created by soft01 on 16/8/9.
+//  Created by soft01 on 16/8/10.
 //  Copyright © 2016年 song. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 extension UIView {
@@ -48,14 +49,14 @@ extension UIView {
     
     var height: CGFloat{
         set(newValue){
-            var reFrame: CGFloat = frame
-            reFrame.size.height = newValue
-            frame = reFrame
-            
+          
+            var tempFrame: CGRect = frame
+            tempFrame.size.height = newValue
+            frame = tempFrame
         }
         
         get {
-           return frame.size.height
+            return frame.size.height
         }
     }
     
@@ -109,5 +110,6 @@ extension UIView {
     }
     
     
-
+    
 }
+
