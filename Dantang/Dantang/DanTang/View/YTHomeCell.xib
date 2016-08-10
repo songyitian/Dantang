@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YTHomeCell" customModule="Dantang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cn-GA-vLP" userLabel="Placeholder Button">
+                        <rect key="frame" x="145" y="67" width="31" height="26"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                        <connections>
+                            <action selector="placeholderBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mje-4v-ef1"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N63-Tw-YTX" userLabel="bg ImageView">
+                        <rect key="frame" x="8" y="8" width="304" height="144"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-BH-fjs">
+                        <rect key="frame" x="13" y="125" width="44" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2k-JQ-qhy" userLabel="favorite Btn">
+                        <rect key="frame" x="276" y="18" width="26" height="25"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="b77-Ia-zIl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="0" image="Feed_FavoriteIcon_17x17_"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N63-Tw-YTX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6rj-h8-i1m"/>
+                    <constraint firstItem="QMc-BH-fjs" firstAttribute="leading" secondItem="N63-Tw-YTX" secondAttribute="leading" constant="5" id="FbN-ei-Gzd"/>
+                    <constraint firstItem="t2k-JQ-qhy" firstAttribute="top" secondItem="N63-Tw-YTX" secondAttribute="top" constant="10" id="aHD-N1-7rW"/>
+                    <constraint firstItem="t2k-JQ-qhy" firstAttribute="trailing" secondItem="N63-Tw-YTX" secondAttribute="trailing" constant="-10" id="aSI-Hr-uIg"/>
+                    <constraint firstItem="8Cn-GA-vLP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="chP-iE-zLO"/>
+                    <constraint firstAttribute="trailing" secondItem="N63-Tw-YTX" secondAttribute="trailing" constant="8" id="gjd-YZ-z9e"/>
+                    <constraint firstItem="8Cn-GA-vLP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hKu-Wc-N4a"/>
+                    <constraint firstAttribute="bottom" secondItem="N63-Tw-YTX" secondAttribute="bottom" constant="7" id="jsf-Eh-Xs9"/>
+                    <constraint firstItem="QMc-BH-fjs" firstAttribute="bottom" secondItem="N63-Tw-YTX" secondAttribute="bottom" constant="-5" id="pRR-Mp-wyS"/>
+                    <constraint firstItem="N63-Tw-YTX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="v5P-Ks-Zbb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="bgImageView" destination="N63-Tw-YTX" id="PJC-Lr-toq"/>
+                <outlet property="favoriteBtn" destination="t2k-JQ-qhy" id="Yc0-rb-MZJ"/>
+                <outlet property="placeholderBtn" destination="8Cn-GA-vLP" id="Gaj-DS-92P"/>
+                <outlet property="titleLabel" destination="QMc-BH-fjs" id="DsO-dS-NEH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Feed_FavoriteIcon_17x17_" width="17" height="17"/>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+    </resources>
+</document>

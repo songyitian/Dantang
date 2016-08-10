@@ -28,6 +28,12 @@
 		D91119921D59D67200ABBFCE /* YTTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119911D59D67200ABBFCE /* YTTopicTableViewController.swift */; };
 		D91119941D59D8E900ABBFCE /* YTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91119931D59D8E900ABBFCE /* YTSearchViewController.swift */; };
 		D913F4681D5AB5C60004D082 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913F4671D5AB5C60004D082 /* UIView+Extension.swift */; };
+		D913F46B1D5AC3AF0004D082 /* YTHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913F4691D5AC3AF0004D082 /* YTHomeCell.swift */; };
+		D913F46C1D5AC3AF0004D082 /* YTHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D913F46A1D5AC3AF0004D082 /* YTHomeCell.xib */; };
+		D913F46E1D5ADC4D0004D082 /* YTRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913F46D1D5ADC4D0004D082 /* YTRefreshControl.swift */; };
+		D913F4701D5ADD3F0004D082 /* YTRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913F46F1D5ADD3F0004D082 /* YTRefreshView.swift */; };
+		D913F4721D5ADD720004D082 /* YTRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D913F4711D5ADD720004D082 /* YTRefreshView.xib */; };
+		D913F4741D5B17FD0004D082 /* YTDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913F4731D5B17FD0004D082 /* YTDetailViewController.swift */; };
 		D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE58A71D58827700D6703C /* AppDelegate.swift */; };
 		D9BE58AF1D58827700D6703C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BE58AE1D58827700D6703C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -55,6 +61,12 @@
 		D91119911D59D67200ABBFCE /* YTTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTTopicTableViewController.swift; sourceTree = "<group>"; };
 		D91119931D59D8E900ABBFCE /* YTSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSearchViewController.swift; sourceTree = "<group>"; };
 		D913F4671D5AB5C60004D082 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D913F4691D5AC3AF0004D082 /* YTHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTHomeCell.swift; sourceTree = "<group>"; };
+		D913F46A1D5AC3AF0004D082 /* YTHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTHomeCell.xib; sourceTree = "<group>"; };
+		D913F46D1D5ADC4D0004D082 /* YTRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTRefreshControl.swift; sourceTree = "<group>"; };
+		D913F46F1D5ADD3F0004D082 /* YTRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTRefreshView.swift; sourceTree = "<group>"; };
+		D913F4711D5ADD720004D082 /* YTRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTRefreshView.xib; sourceTree = "<group>"; };
+		D913F4731D5B17FD0004D082 /* YTDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTDetailViewController.swift; sourceTree = "<group>"; };
 		D9BE58A41D58827700D6703C /* Dantang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dantang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BE58A71D58827700D6703C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BE58AE1D58827700D6703C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +194,7 @@
 				D911196D1D59769A00ABBFCE /* YTDantangViewController.swift */,
 				D91119911D59D67200ABBFCE /* YTTopicTableViewController.swift */,
 				D91119931D59D8E900ABBFCE /* YTSearchViewController.swift */,
+				D913F4731D5B17FD0004D082 /* YTDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +212,11 @@
 		D9BE58C01D58837B00D6703C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D913F4691D5AC3AF0004D082 /* YTHomeCell.swift */,
+				D913F46A1D5AC3AF0004D082 /* YTHomeCell.xib */,
+				D913F46D1D5ADC4D0004D082 /* YTRefreshControl.swift */,
+				D913F46F1D5ADD3F0004D082 /* YTRefreshView.swift */,
+				D913F4711D5ADD720004D082 /* YTRefreshView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -387,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91119761D5976B900ABBFCE /* YTRegisterViewController.xib in Resources */,
+				D913F46C1D5AC3AF0004D082 /* YTHomeCell.xib in Resources */,
 				D9BE58AF1D58827700D6703C /* Assets.xcassets in Resources */,
+				D913F4721D5ADD720004D082 /* YTRefreshView.xib in Resources */,
 				D91119721D5976AA00ABBFCE /* YTLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,8 +469,11 @@
 			files = (
 				D91119841D5980CC00ABBFCE /* YTTabBarControllerViewController.swift in Sources */,
 				D91119901D59C71200ABBFCE /* YTSearchResult.swift in Sources */,
+				D913F4741D5B17FD0004D082 /* YTDetailViewController.swift in Sources */,
 				D911197C1D5976D900ABBFCE /* YTMainViewController.swift in Sources */,
+				D913F4701D5ADD3F0004D082 /* YTRefreshView.swift in Sources */,
 				D91119881D59817000ABBFCE /* YTNewfeatureViewController.swift in Sources */,
+				D913F46E1D5ADC4D0004D082 /* YTRefreshControl.swift in Sources */,
 				D9BE58A81D58827700D6703C /* AppDelegate.swift in Sources */,
 				D911197A1D5976D000ABBFCE /* YTMeViewController.swift in Sources */,
 				D911198E1D59C6FB00ABBFCE /* YTHomeItem.swift in Sources */,
@@ -460,6 +483,7 @@
 				D911198A1D59C4F600ABBFCE /* YTNetworkTool.swift in Sources */,
 				D91119801D5976F100ABBFCE /* YTCategoryViewController.swift in Sources */,
 				D913F4681D5AB5C60004D082 /* UIView+Extension.swift in Sources */,
+				D913F46B1D5AC3AF0004D082 /* YTHomeCell.swift in Sources */,
 				D911197E1D5976E400ABBFCE /* YTProductViewController.swift in Sources */,
 				D911198C1D59C6EB00ABBFCE /* YTChannel.swift in Sources */,
 				D91119861D5980E100ABBFCE /* YTNavViewController.swift in Sources */,
